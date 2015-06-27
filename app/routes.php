@@ -13,5 +13,5 @@
 
 Route::get('/', function()
 {
-	return Response::make('hello');
+	return View::make('hello', ['course' => 'Laravel']);
 });
