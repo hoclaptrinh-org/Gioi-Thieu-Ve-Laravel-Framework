@@ -15,3 +15,10 @@ Route::get('/', function()
 {
 	return View::make('hello', ['course' => 'Laravel']);
 });
+
+Route::get('/{username}/{password}', 'HomeController@secrete');
+
+Route::get('/checkDB', function ()
+{
+	dd(DB::connection()->getDatabaseName());
+});

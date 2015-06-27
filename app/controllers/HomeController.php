@@ -20,4 +20,17 @@ class HomeController extends BaseController {
 		return View::make('hello');
 	}
 
+	public function secrete($username, $password)
+	{
+		if ($username !== 'admin') {
+			$error = 'Tên đăng nhập không đúng';
+			return View::make('error_page')->withError($error);
+		} else if ($password != 'secrete') {
+			$error = 'Mật khẩu không đúng';
+			return View::make('error_page')->withError($error);
+		} else {
+			return View::make('restrict_page')->withUsername($username);
+		}
+	}
+
 }
