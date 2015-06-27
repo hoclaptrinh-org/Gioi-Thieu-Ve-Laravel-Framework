@@ -22,3 +22,10 @@ Route::get('/checkDB', function ()
 {
 	dd(DB::connection()->getDatabaseName());
 });
+
+Route::get('/users/', function ()
+{
+	$users = User::all();
+	$numberOfUsers = count($users);
+	dd($users);
+});
