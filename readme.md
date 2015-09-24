@@ -4,4 +4,4 @@ Laravel là một framework PHP đang được đón nhận mạnh mẽ trong c�
 [Giới Thiệu Về Laravel Framework][1]
 
 
-  [1]: http://www.tuicoding.com/Gioi-Thieu-Ve-Laravel-Framework
+  [1]: http://www.hoclaptrinh.org/Gioi-Thieu-Ve-Laravel-Framework
